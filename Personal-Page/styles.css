@@ -32,10 +32,9 @@ header {
     border-radius: 50%;
     border: 2px solid black; }
   header nav ul {
-    display: flex;
-    margin-left: -12%; }
+    display: flex; }
     header nav ul li {
-      padding: .75em;
+      padding-right: 1em;
       text-decoration: none;
       list-style-type: none; }
   @media (min-width: 50em) {

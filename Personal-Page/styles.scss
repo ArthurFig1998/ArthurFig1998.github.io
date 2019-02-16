@@ -53,9 +53,8 @@ header {
     }
     & nav ul {
         display: flex;
-        margin-left: -12%;
         & li {
-        padding: .75em;
+        padding-right: 1em;
         text-decoration: none;
         list-style-type: none;
         }
