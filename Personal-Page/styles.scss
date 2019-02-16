@@ -24,20 +24,15 @@ body {
 
 main {
     padding: 2em;
+    display: flex;
+    flex-flow: row wrap;
     @include breakpoint(large) {
-        float: left;
         margin-left: 17em;
     }
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lora';
-}
-
-h2 {
-    @include breakpoint(large) {
-        font-size: 2em;
-    }
 }
 
 header {
@@ -100,3 +95,14 @@ header a:hover {
 
 }
 /**********************/
+
+
+/*Skills Styles*/
+
+.skills, .about-me {
+    width: 40%;
+}
+
+.skills {
+    margin-left: 15%;
+}

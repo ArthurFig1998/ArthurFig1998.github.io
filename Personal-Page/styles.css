@@ -8,18 +8,15 @@ body {
   background-color: #ffffff; }
 
 main {
-  padding: 2em; }
+  padding: 2em;
+  display: flex;
+  flex-flow: row wrap; }
   @media (min-width: 50em) {
     main {
-      float: left;
       margin-left: 17em; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora'; }
-
-@media (min-width: 50em) {
-  h2 {
-    font-size: 2em; } }
 
 header {
   width: 100%;
@@ -70,5 +67,11 @@ header a:hover {
   color: #000000; }
 
 /**********************/
+/*Skills Styles*/
+.skills, .about-me {
+  width: 40%; }
+
+.skills {
+  margin-left: 15%; }
 
 /*# sourceMappingURL=styles.css.map */
