@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+
 .wrap:after {
   content: "";
   display: table;
   clear: both; }
+
 
 #secondary,
 #tertiary {
@@ -67,58 +70,71 @@ footer {
   justify-content: center;
   padding: 40px;
   color: white;
-  background-color: #ff1c91; }
+  background-color: #ff1c91; 
+}
+
 
 #sec1 {
   background-color: deeppink;
   color: white;
-  padding: 20px;
+  padding: 20px; 
   width: 48%;
-  margin-left: 40%; }
+  margin-left: 40%;
+}
 
 #sec2 {
   padding: 20px;
   width: 48%;
   grid-column: 1/2;
-  margin-left: 10%; }
+  margin-left: 10%;
+}
 
 #sec3 {
   background-color: #38ea38;
   color: white;
-  padding: 20px; }
+  padding: 20px; 
+}
 
 #message {
-  text-align: center; }
+    text-align: center;
+}
 
 .contact {
-  margin: 0 auto;
-  width: 60%; }
+    margin: 0 auto;
+    width: 60%;
+}
 
 header {
   background-color: #38ea38;
-  display: flex;
+  display: flex; 
   flex-flow: row;
-  color: white; }
-  header h1 {
-    flex-flow: row nowrap; }
+  color: white;
+    & h1 {
+        flex-flow: row nowrap;
+    }
+}
 
 nav ul {
   display: flex;
-  float: right;
-  padding-left: 30em; }
-  nav ul li {
-    list-style-type: none;
-    font-size: 1.7em; }
+  float: right; 
+  & li {
+      list-style-type: none;
+      font-size: 1.7em;
+      }
+  padding-left: 30em;
+}
 
 .short-text {
-  display: none; }
+  display:none;
+}
 
 .topnav a {
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 8px 10px;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .topnav a:hover {
   background-color: #ff6bb7;
@@ -126,24 +142,31 @@ nav ul {
 
 @media screen and (max-width: 600px) {
   body {
-    overflow-y: hidden; }
+    overflow-y: hidden;
+  }
 
-  #sec2, #sec1, #sec3 {
-    width: 100%; }
+  #sec2, #sec1, #sec3{
+    width: 100%;
+  }
 
   #sec1, #sec2 {
-    margin-left: 0; }
-
+    margin-left: 0;
+  }
   .full-text {
-    display: none; }
+    display: none;
+  }
 
   .short-text {
-    display: inline-block; }
-
+    display: inline-block; 
+  }
+  
   nav ul {
-    padding-left: 0; }
-    nav ul li {
-      font-size: 1em; } }
+    padding-left: 0;
+    & li {
+      font-size: 1em;
+    }
+  }
+}
 .button {
   width: 25%;
   padding: 8px;
@@ -298,7 +321,9 @@ img {
 
 .container {
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto; 
+}
+
 
 .container .imgcontent {
   position: absolute;
@@ -308,7 +333,5 @@ img {
   color: #f1f1f1;
   width: 100%;
   padding: 1px; }
-
-/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
