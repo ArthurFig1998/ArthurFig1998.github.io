@@ -1,6 +1,7 @@
 $break-large: 50em;
-$body-color: #ffffff;
-$royal-blue: #4169e1;
+$primary: #4169e1;
+$secondary-color: #F0E68C;
+$tertiary: #f5f5dc;
 $margin: 0 auto;
 
 @mixin breakpoint($break) {
@@ -19,7 +20,7 @@ $margin: 0 auto;
 body {
     font-family: Helvetica, Arial, sans-serif;
     margin: $margin;
-    background-color: $body-color;
+    background-color: $tertiary;
 }
 
 main {
@@ -40,7 +41,7 @@ header {
     margin: $margin;
     padding: 1em;
     text-align: center;
-    background-color: $royal-blue;
+    background-color: $primary;
     & > div > img {
         width: 60%;
         border-radius: 50%;
@@ -76,13 +77,13 @@ header {
 
 /* Header Links Styles */
 header a {
-    color: $body-color;
+    color: $tertiary;
     text-decoration: none;
     font-weight: bold;
 }
 
 header a:visited {
-    color: $body-color;
+    color: $tertiary;
     text-decoration: none;
 }
 
@@ -99,10 +100,35 @@ header a:hover {
 
 /*Skills Styles*/
 
-.skills, .about-me {
-    width: 40%;
+#firstSection, #work {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid gray;
 }
 
-.skills {
-    margin-left: 15%;
+#skills, #smallerPrj {
+    background-color: $secondary-color;
+    padding: 0px 50px 30px 20px;
+}
+
+@include breakpoint(large) {
+    #skills, #about-me {
+        width: 40%;
+    }
+
+    #skills, #smallerPrj {
+        margin-left: 15%;
+        background-color: $tertiary;
+    }
+}
+
+/*****************************/
+
+#work {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#biggerPrj, #smallerPrj {
+    width: 40%;
 }

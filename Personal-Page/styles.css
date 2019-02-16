@@ -5,7 +5,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0 auto;
-  background-color: #ffffff; }
+  background-color: #f5f5dc; }
 
 main {
   padding: 2em;
@@ -52,12 +52,12 @@ header {
 
 /* Header Links Styles */
 header a {
-  color: #ffffff;
+  color: #f5f5dc;
   text-decoration: none;
   font-weight: bold; }
 
 header a:visited {
-  color: #ffffff;
+  color: #f5f5dc;
   text-decoration: none; }
 
 header a:active {
@@ -68,10 +68,28 @@ header a:hover {
 
 /**********************/
 /*Skills Styles*/
-.skills, .about-me {
-  width: 40%; }
+#firstSection, #work {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid gray; }
 
-.skills {
-  margin-left: 15%; }
+#skills, #smallerPrj {
+  background-color: #F0E68C;
+  padding: 0px 50px 30px 20px; }
+
+@media (min-width: 50em) {
+  #skills, #about-me {
+    width: 40%; }
+
+  #skills, #smallerPrj {
+    margin-left: 15%;
+    background-color: #f5f5dc; } }
+/*****************************/
+#work {
+  display: flex;
+  flex-flow: row wrap; }
+
+#biggerPrj, #smallerPrj {
+  width: 40%; }
 
 /*# sourceMappingURL=styles.css.map */
