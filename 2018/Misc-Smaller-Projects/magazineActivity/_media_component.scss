@@ -1,0 +1,137 @@
+// *** Info box: should allow for details to be placed center, right, or left.  And on the top or bottom of the image. Bottom/left is default
+// ***REQUIRES: breakpoint mixin to work.
+// ***USAGE:
+// <div class="media-box right|center|top">
+//   <a href="#"> <!-- optional anchor if component will be a link -->
+//      <picture>
+//          <source  media="(min-width: 1080px)" srcset=" images/winter-trees-portrait-608.jpg" >
+//          <img src="images/winter-trees-portrait-304.jpg" alt="image of winter trees" >
+//      </picture>
+
+//      <div>
+//          <h2>06 &#8212; 19</h2>
+//         <p>Trees <span>Lightly Frosted with Snow</span></p>
+//      </div>
+//    </a>
+//</div>
+
+$aspect-ratio: 0.75; // width/height for the images I want to use.
+
+.media-box {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: flex-start;
+  // the following classes are to modify the base behavior and move the text block to different areas.
+  &.right {
+    align-items: flex-end;
+  }
+  &.center {
+    align-items: center;
+  }
+  &.top > div {
+    @include breakpoint(medium) {
+      order: -1; // On small screens top should be bottom
+    }
+  }
+  &.first{
+    @include breakpoint(medium){
+      align-items: flex-end;
+    }
+  }
+  &.second{
+    @include breakpoint(medium){
+      align-items: center;
+      margin-right: 100px;
+    }
+  }
+  &.third{
+    @include breakpoint(medium) {
+      align-items: flex-start;
+    }
+  }
+  &.fourth {
+    @include breakpoint(medium) {
+      align-items: flex-end;
+    }
+  }
+  & .legend {
+    @include breakpoint(medium) {
+      position: absolute;
+    }
+  }
+  & .under {
+    @include breakpoint(medium) {
+      margin-top: 200px;
+    }
+  }
+
+  & .above {
+    @include breakpoint(medium) {
+      margin-bottom: 100px;
+    }
+  }
+
+}
+  div {
+    // these styles are for the text blocks
+    transition: all 0.5s;
+    h2 {
+      font-size: 2em;
+      margin: 0;
+      margin-bottom: -0.7em;
+    }
+    p > span {
+      display: block;
+    }
+  }
+  img {
+    max-height: calc(
+      100vw *#{$aspect-ratio}
+    ); //this is to keep the height of portrait images the same as a landscape
+    @include breakpoint(medium) {
+      max-height: calc(25vw *#{$aspect-ratio});
+    }
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover > div {
+      transform: scale(1.2);
+    }
+  }
+
+.index-grid {
+  @include breakpoint($break-large) {
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+.media-box.right {
+  @include breakpoint(medium) {
+    top: 100px;
+    left: 100px;
+  }
+}
+
+.title
+{
+  &.part1 {
+    @include breakpoint(medium){
+      writing-mode: horizontal-tb;
+      text-orientation: sideways;
+      font-size: 20vw;
+      left: 0;
+    }
+  }
+  &.part2 {
+    @include breakpoint(medium) {
+      writing-mode: horizontal-tb;
+      text-orientation: sideways;
+      font-size: 20vw;
+      top: 100px;
+      right: 200px;
+    }
+  }
+}

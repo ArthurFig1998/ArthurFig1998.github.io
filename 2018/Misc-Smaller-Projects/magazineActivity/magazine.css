@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+body {
+  font-family: "Nunito", "Trebuchet MS", Helvetica, sans-serif; }
+
+.index-grid {
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(3, auto); }
+
+.title {
+  position: absolute; }
+  .title.part1 {
+    font-size: 35vw;
+    left: -75px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    grid-row: 1/2; }
+  .title.part2 {
+    font-size: 35vw;
+    right: -75px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    grid-row: 3/4; }
+
+.media-box {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: flex-start; }
+  .media-box.right {
+    align-items: flex-end; }
+  .media-box.center {
+    align-items: center; }
+  @media (min-width: 46.8em) {
+    .media-box.top > div {
+      order: -1; } }
+  @media (min-width: 46.8em) {
+    .media-box.first {
+      align-items: flex-end; } }
+  @media (min-width: 46.8em) {
+    .media-box.second {
+      align-items: center;
+      margin-right: 100px; } }
+  @media (min-width: 46.8em) {
+    .media-box.third {
+      align-items: flex-start; } }
+  @media (min-width: 46.8em) {
+    .media-box.fourth {
+      align-items: flex-end; } }
+  @media (min-width: 46.8em) {
+    .media-box .legend {
+      position: absolute; } }
+  @media (min-width: 46.8em) {
+    .media-box .under {
+      margin-top: 200px; } }
+  @media (min-width: 46.8em) {
+    .media-box .above {
+      margin-bottom: 100px; } }
+
+div {
+  transition: all 0.5s; }
+  div h2 {
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: -0.7em; }
+  div p > span {
+    display: block; }
+
+img {
+  max-height: calc( 100vw *0.75 ); }
+  @media (min-width: 46.8em) {
+    img {
+      max-height: calc(25vw *0.75); } }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover > div {
+    transform: scale(1.2); }
+
+@media (67.5em) {
+  .index-grid {
+    grid-template-rows: repeat(4, auto); } }
+
+@media (min-width: 46.8em) {
+  .media-box.right {
+    top: 100px;
+    left: 100px; } }
+
+@media (min-width: 46.8em) {
+  .title.part1 {
+    writing-mode: horizontal-tb;
+    text-orientation: sideways;
+    font-size: 20vw;
+    left: 0; } }
+@media (min-width: 46.8em) {
+  .title.part2 {
+    writing-mode: horizontal-tb;
+    text-orientation: sideways;
+    font-size: 20vw;
+    top: 100px;
+    right: 200px; } }
+
+/*# sourceMappingURL=magazine.css.map */

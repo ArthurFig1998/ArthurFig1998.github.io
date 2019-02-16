@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="week08.js"></script>
+        <style>
+            .title
+            {
+                border-radius: 4px;
+                background-color: darkturquoise;
+                color: black;
+                text-align: center;
+            }
+            
+            fieldset
+            {
+                font-size:16px;
+                padding:10px;
+                width:250px;
+                line-height:1.8;
+                display : inline-block;
+                background-color: darkgrey;
+            }
+            
+            table, td, th
+            {
+                border: 1px solid black;
+                padding: 1px
+            }
+            
+            #students
+            {
+                 padding:2em;
+            }
+
+        
+        </style>
+    </head>
+    <body style="background-color: aqua">
+        <h1 class="title">AJAX Request</h1>
+        <hr>
+        <p>Display 10 largests cities and its population. Select country:</p>
+        <select onchange="makeRequest(value)">
+            <option value="" disabled selected style="display:none;">--Select--</option>
+            <option value="usa.txt" onchange="makeRequest(value)">USA</option>
+            <option value="canada.txt" onchange="makeRequest(value)">Canada</option>
+            <option value="mexico.txt" onchange="makeRequest(value)">Mexico</option>
+            <option value="russia.txt" onchange="makeRequest(value)">Russia</option>
+        </select>
+        
+        <br>
+        <br>
+        <fieldset>
+            <pre id="demo"></pre>
+        </fieldset>
+        
+        <br>
+        <section id="main">
+        <div id="students">
+            <h2>Students</h2>
+            <div id="parseJSON"></div>
+            <input type="button" onclick="getStudents()" value="json.txt">
+            <input type="button" onclick="getStudents1()" value="json1.txt">
+            <button onclick="clearStudentTable()">Reset JSON</button>
+            <h3>Student Data:</h3>
+            <table id="studentTable" style="margin:1em; width:90vw">
+                <thead>
+                    <tr>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Address</th>
+                        <th>Major</th>
+                        <th>GPA</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        </section>
+    </body>
+</html>

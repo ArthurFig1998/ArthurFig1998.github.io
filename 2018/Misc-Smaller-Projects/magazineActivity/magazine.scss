@@ -1,0 +1,40 @@
+@import 'variables';
+
+@import url($body_font_path);
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: $body_font_family;
+}
+
+.index-grid{
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(3, auto);
+}
+
+.title {
+  position: absolute;
+  &.part1 {
+    font-size: 35vw;
+    left:-75px;
+    writing-mode: vertical-lr;
+    text-orientation: $vertical;
+    grid-row: 1/2;
+  }
+  &.part2 {
+    font-size: 35vw;
+    right: -75px;
+    writing-mode: vertical-lr;
+    text-orientation: $vertical;
+    grid-row: 3/4;
+  }
+}
+
+@import 'media_component';
