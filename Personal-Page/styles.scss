@@ -49,7 +49,7 @@ header {
     & > div > img {
         width: 60%;
         border-radius: 50%;
-        border: 2px solid black;
+        border: 2px solid gray;
     }
     & nav ul {
         display: flex;
@@ -71,7 +71,10 @@ header {
         & nav ul {
             display: block;
             margin-left: 0;
-
+            & li {
+                font-size: 1.5em;
+                padding-bottom: 2em;
+            }
         }
     }
 }
@@ -80,6 +83,7 @@ header {
 header a {
     color: $body-color;
     text-decoration: none;
+    font-weight: bold;
 }
 
 header a:visited {
@@ -92,44 +96,7 @@ header a:active {
 }
 
 header a:hover {
-    color: white;
-    text-decoration: underline;
+    color: #000000;
+
 }
 /**********************/
-
-/* Article Links Styles */
-
-h2 a {
-    color: black;
-    text-decoration: none;
-}
-
-h2 a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-h2 a:active {
-    color: #DEB887;
-}
-
-h2 a:hover {
-    color: #6495ED;
-    text-decoration: underline;
-}
-
-/*******************/
-
-/* Other Links Styles */
-a, a:visited {
-    color: #6495ED;
-    text-decoration: underline;
-}
-
-a:active {
-    color: #DEB887;
-}
-
-a:hover {
-    text-decoration: underline;
-}

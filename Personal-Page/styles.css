@@ -30,7 +30,7 @@ header {
   header > div > img {
     width: 60%;
     border-radius: 50%;
-    border: 2px solid black; }
+    border: 2px solid gray; }
   header nav ul {
     display: flex; }
     header nav ul li {
@@ -48,12 +48,16 @@ header {
         width: 100%; }
       header nav ul {
         display: block;
-        margin-left: 0; } }
+        margin-left: 0; }
+        header nav ul li {
+          font-size: 1.5em;
+          padding-bottom: 2em; } }
 
 /* Header Links Styles */
 header a {
   color: #ffffff;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: bold; }
 
 header a:visited {
   color: #ffffff;
@@ -63,36 +67,8 @@ header a:active {
   color: #DEB887; }
 
 header a:hover {
-  color: white;
-  text-decoration: underline; }
+  color: #000000; }
 
 /**********************/
-/* Article Links Styles */
-h2 a {
-  color: black;
-  text-decoration: none; }
-
-h2 a:visited {
-  color: black;
-  text-decoration: none; }
-
-h2 a:active {
-  color: #DEB887; }
-
-h2 a:hover {
-  color: #6495ED;
-  text-decoration: underline; }
-
-/*******************/
-/* Other Links Styles */
-a, a:visited {
-  color: #6495ED;
-  text-decoration: underline; }
-
-a:active {
-  color: #DEB887; }
-
-a:hover {
-  text-decoration: underline; }
 
 /*# sourceMappingURL=styles.css.map */
