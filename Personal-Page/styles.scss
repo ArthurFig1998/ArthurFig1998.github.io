@@ -106,18 +106,24 @@ header a:hover {
     border-bottom: 1px solid gray;
 }
 
-#skills, #smallerPrj {
+#skills {
     background-color: $secondary-color;
     padding: 0px 50px 30px 20px;
 }
 
 @include breakpoint(large) {
-    #skills, #about-me {
+    #skills, #about-me, #biggerPrj, #smallerPrj {
         width: 40%;
     }
 
     #skills, #smallerPrj {
         margin-left: 15%;
+        background-color: $tertiary;
+    }
+    #smallerPrj {
+        padding: 0px 50px 30px 20px;
+    }
+    #thirdSection {
         background-color: $tertiary;
     }
 }
@@ -129,6 +135,6 @@ header a:hover {
     flex-flow: row wrap;
 }
 
-#biggerPrj, #smallerPrj {
-    width: 40%;
+#thirdSection {
+    background-color: $secondary-color;
 }

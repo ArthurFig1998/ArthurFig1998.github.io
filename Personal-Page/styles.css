@@ -73,23 +73,29 @@ header a:hover {
   flex-flow: row wrap;
   border-bottom: 1px solid gray; }
 
-#skills, #smallerPrj {
+#skills {
   background-color: #F0E68C;
   padding: 0px 50px 30px 20px; }
 
 @media (min-width: 50em) {
-  #skills, #about-me {
+  #skills, #about-me, #biggerPrj, #smallerPrj {
     width: 40%; }
 
   #skills, #smallerPrj {
     margin-left: 15%;
+    background-color: #f5f5dc; }
+
+  #smallerPrj {
+    padding: 0px 50px 30px 20px; }
+
+  #thirdSection {
     background-color: #f5f5dc; } }
 /*****************************/
 #work {
   display: flex;
   flex-flow: row wrap; }
 
-#biggerPrj, #smallerPrj {
-  width: 40%; }
+#thirdSection {
+  background-color: #F0E68C; }
 
 /*# sourceMappingURL=styles.css.map */
