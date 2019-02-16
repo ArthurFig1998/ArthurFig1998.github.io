@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.wrap
+{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1em;
+}
+ 
+.wrap:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+ 
+#primary
+{
+    max-width: 720px;
+    margin: 0 auto;
+}
+ 
+#secondary,
+#tertiary
+{
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+ 
+#secondary .widget,
+#tertiary .widget
+{
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+
+@media screen and (min-width : 900px) 
+{
+    #primary
+    {
+        float: left;
+        width: 65%;
+        padding-right: 1em;
+    }
+ 
+    #secondary,
+    #tertiary
+    {
+        float: right;
+        clear: right;
+        width: 35%;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width : 1140px) 
+{
+    #primary{
+        float: left;
+        margin-left: 25%;
+        width: 50%;
+        padding: 0 1em;
+    }
+ 
+    #secondary{
+        float: left;
+        margin: 0 0 0 -75%;
+        width: 20%;
+        clear: none;
+        border-radius: 8px;
+    }
+ 
+    #tertiary{
+        float: right;
+        width: 25%;
+        clear: none;
+    }
+}
+
+
+html
+{
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    align-content:center;
+    margin: 0;
+    padding: 0;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+body
+{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    align-content: center;
+}
+
+footer
+{
+    display: block;
+    color: white;
+    background-color: #ff1c91;
+}
+
+.header
+{
+    
+    float: left;
+    font-size: 28px;
+    color: white;
+    column-rule: 4px outset white;
+}
+
+h1
+{
+    font-size: 28px;
+    column-rule: 4px outset white;
+}
+
+#sec1
+{
+    background-color: deeppink;
+    color: white;
+    padding: 20px;
+}
+
+#sec2
+{
+    padding: 20px;
+}
+
+#sec3
+{
+    background-color: #38ea38;
+    color: white;
+    padding: 20px;
+}
+
+.vr
+{
+  display: inline;
+  height:100%;
+  width:1px;
+  border:1px inset;
+  margin:5px
+}
+
+.vr1
+{
+    border-right: 1px solid white;
+    padding-right: .5em;
+}
+
+.topnav
+{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #38ea38;
+    z-index: 10;
+}
+
+.topnav a
+{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover 
+{
+    background-color: #ff6bb7;
+    color: black;
+}
+
+.topnav .icon
+{
+    display: none;
+}
+
+@media screen and (max-width: 500px)
+{
+    .topnav a
+    {
+        display: none;
+    }
+    .topnav a.icon
+    {
+        float: right;
+        display: block;
+        margin-top: -1em;
+    }
+    .mobileName
+    {
+        font-size: 18px;
+        margin-top: -2.7em;
+    }
+    .full-text
+    
+    {
+        display: none;
+    }
+    
+    .short-text
+    {
+        margin-top: -1.75em;
+        font-size: 25px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .topnav.responsive
+    {
+        position: fixed;
+    }
+    .topnav.responsive .icon
+    {
+        margin-top: 0em;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    #space
+    {
+        display: none;
+    }
+    
+    .topnav.responsive a
+    {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.button
+{
+    width: 25%;
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: table-cell;
+}
+
+.btn-group .button
+{
+    background-color: midnightblue;
+    color: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+    border-radius: 1px;
+}
+
+
+
+.button:hover
+{
+    background-color: #0099cc;
+}
+
+table
+{
+    font-size: 16px;
+    width: 50%;
+}
+
+td, th
+{
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+.backTop
+{
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+}
+
+.topIcon
+{
+    height: 30px;
+    width: 30px;
+}
+
+#petYes
+{
+    opacity: 0;
+    transition: .5s;
+    height: 0;
+}
+
+#freqCleaning
+{
+    opacity: 0;
+    transition: .5s;
+    height: 0;
+}
+
+
+
+/*******************
+Styles for Slideshow
+********************/
+
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 2em;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+ .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+/* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+ }
+
+ /* Caption text */
+ .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 1px;
+}
