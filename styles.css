@@ -98,8 +98,15 @@ header a:hover {
     margin-left: 15%;
     background-color: white;
     padding: 0px 50px 30px 20px; } }
-footer {
-  padding-left: 17em; }
+@media (min-width: 50em) {
+  footer {
+    padding-left: 17em; } }
+footer ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none; }
+  footer ul li {
+    padding-right: 20px; }
 
 /*****************************/
 
