@@ -1,7 +1,7 @@
 $break-large: 50em;
 $primary: #4169e1;
 $secondary-color: #F0E68C;
-$tertiary: #f5f5dc;
+$tertiary: white;
 $margin: 0 auto;
 
 @mixin breakpoint($break) {
@@ -107,7 +107,7 @@ header a:hover {
 }
 
 #thirdSection {
-    background-color: $secondary-color;
+    ///background-color: $secondary-color;
     padding: 0 10px 0 10px;
     @include breakpoint(large) {
         background-color: $tertiary;
@@ -121,7 +121,7 @@ header a:hover {
 }
 
 #skills {
-    background-color: $secondary-color;
+    ///background-color: $secondary-color;
     padding: 0px 50px 30px 20px;
     @include breakpoint(large) {
         margin-left: 15%;
