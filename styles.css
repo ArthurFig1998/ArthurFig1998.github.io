@@ -73,7 +73,8 @@ header a:hover {
   flex-flow: row wrap; }
 
 #thirdSection {
-  background-color: #F0E68C; }
+  background-color: #F0E68C;
+  padding: 0 10px 0 10px; }
 
 #firstSection, #work {
   display: flex;
