@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
+$break-large: 50em;
 @mixin breakpoint($break) {
     @if $break == large {
         @media (min-width: $break-large) { @content; }
@@ -184,8 +185,9 @@ p
     background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
     color: #f1f1f1;
     padding: 20px;
+    display: none;
     @include breakpoint(large) {
-        display: none;
+        display: block;
     }
 }
 
@@ -235,9 +237,12 @@ p
           
   .rightcol
   {
-      width: 45%;
+    width: 45%;
+    float: none;
+    padding: 10px;
+    @include breakpoint(large) {
       float: right;
-      padding: 10px;
+    }
   }
   #sec1
   {
