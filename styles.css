@@ -68,6 +68,13 @@ header a:hover {
 
 /**********************/
 /*Skills Styles*/
+#work {
+  display: flex;
+  flex-flow: row wrap; }
+
+#thirdSection {
+  background-color: #F0E68C; }
+
 #firstSection, #work {
   display: flex;
   flex-flow: row wrap;
@@ -91,11 +98,5 @@ header a:hover {
   #thirdSection {
     background-color: #f5f5dc; } }
 /*****************************/
-#work {
-  display: flex;
-  flex-flow: row wrap; }
-
-#thirdSection {
-  background-color: #F0E68C; }
 
 /*# sourceMappingURL=styles.css.map */
