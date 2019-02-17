@@ -75,6 +75,9 @@ header a:hover {
 #thirdSection {
   background-color: #F0E68C;
   padding: 0 10px 0 10px; }
+  @media (min-width: 50em) {
+    #thirdSection {
+      background-color: #f5f5dc; } }
 
 #firstSection, #work {
   display: flex;
@@ -84,20 +87,19 @@ header a:hover {
 #skills {
   background-color: #F0E68C;
   padding: 0px 50px 30px 20px; }
+  @media (min-width: 50em) {
+    #skills {
+      margin-left: 15%;
+      background-color: #f5f5dc; } }
 
 @media (min-width: 50em) {
   #skills, #about-me, #biggerPrj, #smallerPrj {
     width: 40%; }
 
-  #skills, #smallerPrj {
-    margin-left: 15%;
-    background-color: #f5f5dc; }
-
   #smallerPrj {
-    padding: 0px 50px 30px 20px; }
-
-  #thirdSection {
-    background-color: #f5f5dc; } }
+    margin-left: 15%;
+    background-color: #f5f5dc;
+    padding: 0px 50px 30px 20px; } }
 /*****************************/
 
 /*# sourceMappingURL=styles.css.map */

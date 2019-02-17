@@ -109,6 +109,9 @@ header a:hover {
 #thirdSection {
     background-color: $secondary-color;
     padding: 0 10px 0 10px;
+    @include breakpoint(large) {
+        background-color: $tertiary;
+    }
 }
 
 #firstSection, #work {
@@ -120,6 +123,10 @@ header a:hover {
 #skills {
     background-color: $secondary-color;
     padding: 0px 50px 30px 20px;
+    @include breakpoint(large) {
+        margin-left: 15%;
+        background-color: $tertiary;
+    }
 }
 
 @include breakpoint(large) {
@@ -127,15 +134,10 @@ header a:hover {
         width: 40%;
     }
 
-    #skills, #smallerPrj {
+    #smallerPrj {
         margin-left: 15%;
         background-color: $tertiary;
-    }
-    #smallerPrj {
         padding: 0px 50px 30px 20px;
-    }
-    #thirdSection {
-        background-color: $tertiary;
     }
 }
 
