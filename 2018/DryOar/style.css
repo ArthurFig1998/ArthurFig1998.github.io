@@ -153,13 +153,9 @@ p {
 
   .rightcol {
     width: 45%;
-    float: none;
-    padding: 10px; } }
-  @media screen and (min-width: 760px) and (min-width: 50em) {
-    .rightcol {
-      float: right; } }
+    float: right;
+    padding: 10px; }
 
-@media screen and (min-width: 760px) {
   #sec1 {
     padding: 10px; }
 
@@ -212,9 +208,15 @@ p {
     height: 40px; }
 
   .contactImage {
-    height: 350px;
-    width: 450px; }
+    display: none;
+    width: 10%; } }
+  @media screen and (min-width: 760px) and (min-width: 50em) {
+    .contactImage {
+      height: 350px;
+      width: 450px;
+      display: block; } }
 
+@media screen and (min-width: 760px) {
   /*Images Styles end*/
   .nameClassCopy {
     float: left; }
