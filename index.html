@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="effects.js"></script>
         <link rel="stylesheet" media="screen" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Arthur Figueiredo">
@@ -17,10 +18,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#work">Work Done</a></li>
-                    <li><a href="#thirdSection">References</a></li>
+                    <li><a href="#about-me" onclick="aboutme()">About Me</a></li>
+                    <li><a href="#skills" onclick="skills()">Skills</a></li>
+                    <li><a href="#work" onclick="workDone()">Work Done</a></li>
+                    <li><a href="#thirdSection" onclick="thirdSection()">References</a></li>
                 </ul>
             </nav>
         </header>
@@ -98,7 +99,7 @@
                 </ul>
             </section>
         </main>
-        <footer>
+        <footer id="footer">
             <ul>
                 <li>Contact Information:</li>
                 <li><a href="mailto:fig16009@byui.edu">fig16009@byui.edu</a></li>
