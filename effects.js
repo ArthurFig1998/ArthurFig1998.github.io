@@ -7,6 +7,7 @@ function aboutme() {
     let references = document.getElementById('thirdSection');
 
     firstSection.style.border = "none";
+    firstSection.style.display = "flex";
     aboutme.style.display = "block";
     aboutme.style.transform = "scale(1.3) translate(15%, 20%)";
     aboutme.style.width = "70%";
@@ -26,6 +27,7 @@ function skills() {
 
     footer.style.display = "none";
     firstSection.style.border = "none";
+    firstSection.style.display = "flex";
     skills.style.display = "block";
     skills.style.transform = "scale(1.3) translate(0, 20%)";
     skills.style.width = "70%";
@@ -65,7 +67,4 @@ function thirdSection() {
     firstSection.style.display = "none";
     work.style.display = "none";
     references.style.display = "block";
-    //references.style.transform = "scale(1.3) translate(10%, 0)";
-    //references.style.width = "70%";
-    
 }
