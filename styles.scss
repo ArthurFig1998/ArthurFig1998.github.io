@@ -80,6 +80,13 @@ header {
     }
 }
 
+#homeLink {
+    display: none;
+    @include breakpoint(large) {
+        display: block;
+    }
+}
+
 /* Header Links Styles */
 header a {
     color: $tertiary;

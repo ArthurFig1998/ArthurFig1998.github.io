@@ -52,6 +52,12 @@ header {
           font-size: 1.5em;
           padding-bottom: 2em; } }
 
+#homeLink {
+  display: none; }
+  @media (min-width: 50em) {
+    #homeLink {
+      display: block; } }
+
 /* Header Links Styles */
 header a {
   color: white;
