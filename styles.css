@@ -32,6 +32,7 @@ header {
   header nav ul {
     display: flex; }
     header nav ul li {
+      margin-left: -20px;
       padding-right: 1em;
       text-decoration: none;
       list-style-type: none; }
