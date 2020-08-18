@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+$gray:#707070;
+$blue: #2677B9;
+
+body {
+    font-family: 'Jost', sans-serif;
+    color: $gray;
+}
+
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+#blueBar {
+    display: inline-block;
+    background-color: $blue;
+    height: 70px;
+    width: 100%;
+    margin-top: -15px;
+    margin-left: -16px;
+}
+#grayBar {
+    background-color: #EAEAEA;
+    height: 70px;
+    width: 100%;
+    margin-top: -15px;
+    margin-left: -16px;
+}
+
+#blueBar_footer {
+    display: inline-block;
+    background-color: $blue;
+    height: 100px;
+    width: 100%;
+    margin-bottom: -16px;
+    margin-left: -16px;
+    margin-right: -50px;
+}
+#grayBar_footer {
+    background-color: #EAEAEA;
+    height: 70px;
+    width: 100%;
+    margin-bottom: -16px;
+    margin-left: -16px;
+    margin-right: -50px;
+}
+
+#question {
+    font-style: italic;
+    text-align: center;
+}
+
+#ponder, #discuss {
+    font-size: 1.2em;
+}
+
+#three-options {
+    display: flex;
+    justify-content:center;
+
+    #option-one, #option-two, #option-three {
+        font-size: 1.4em;
+        font-weight: bolder;
+        text-align: center;
+        width: 33.33%;
+        background-color: #EAEAEA;
+        border: 1px solid $gray;
+        text-decoration: none;
+        font-weight: bold;
+        color: $gray;
+        &:hover {
+            background-color: $blue;
+            color: white;
+        }
+    }
+}
+
+#option-one-content, #option-two-content, #option-three-content {
+    display: flex;
+    justify-content: space-between;
+
+    #option-one-questions, #option-two-questions, #option-three-questions {
+        width: 48%;
+    }
+
+    #option-one-quoteBox {
+        background-color: $blue;
+        border-left: 10px solid #20659E;
+        padding: 60px 20px 50px 20px;
+        color: white;
+        width: 48%;
+        margin-top: 30px;
+    }
+
+    #option-two-video, #option-three-video {
+        margin-top: 30px;
+        width: 48%;
+
+        img {
+            max-width: 460px;
+        }
+    }
+}
+
+#option-one-content, #option-two-content, #option-three-content {
+    display: none;
+}
+
+#activity {
+    display: flex;
+    justify-content: space-between;
+
+    #activity-picture {
+        margin-top: 30px;
+        width: 48%;
+
+        img {
+            max-width: 455px;
+        }
+    }
+
+    #activity-text {
+        width: 50%;
+    } 
+}
+
+#invite {
+    text-align: center;
+}
