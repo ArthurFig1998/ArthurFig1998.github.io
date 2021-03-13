@@ -12,7 +12,6 @@ body {
     margin: 0 auto;
 }
 
-
 #blueBar {
     display: inline-block;
     background-color: $blue;
@@ -109,7 +108,7 @@ body {
 }
 
 #activity {
-    display: flex;
+    display: none;
     justify-content: space-between;
 
     #activity-picture {
@@ -127,5 +126,6 @@ body {
 }
 
 #invite {
+    display: none;
     text-align: center;
 }

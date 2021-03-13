@@ -9,6 +9,11 @@ function optionOne() {
     var optionOneContent = document.getElementById('option-one-content');
     var optionTwoContent = document.getElementById('option-two-content');
     var optionThreeContent = document.getElementById('option-three-content');
+    var activity = document.getElementById('activity');
+    var invite = document.getElementById('invite');
+
+    activity.style.display = "flex";
+    invite.style.display = "block";
 
     optionOne.style.backgroundColor = "#2677B9";
     optionOne.style.color = "white";
@@ -32,6 +37,11 @@ function optionTwo() {
     var optionOneContent = document.getElementById('option-one-content');
     var optionTwoContent = document.getElementById('option-two-content');
     var optionThreeContent = document.getElementById('option-three-content');
+    var activity = document.getElementById('activity');
+    var invite = document.getElementById('invite');
+
+    activity.style.display = "flex";
+    invite.style.display = "block";
 
     optionTwo.style.backgroundColor = "#2677B9";
     optionTwo.style.color = "white";
@@ -56,6 +66,11 @@ function optionThree() {
     var optionOneContent = document.getElementById('option-one-content');
     var optionTwoContent = document.getElementById('option-two-content');
     var optionThreeContent = document.getElementById('option-three-content');
+    var activity = document.getElementById('activity');
+    var invite = document.getElementById('invite');
+
+    activity.style.display = "flex";
+    invite.style.display = "block";
 
     optionThree.style.backgroundColor = "#2677B9";
     optionThree.style.color = "white";
