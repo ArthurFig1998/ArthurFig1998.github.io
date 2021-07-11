@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  background-color: white; }
+
+main {
+  padding: 2em;
+  display: flex;
+  flex-flow: row wrap; }
+  @media (min-width: 50em) {
+    main {
+      margin-left: 17em; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora'; }
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  background-color: #4169e1; }
+  header > div > img {
+    width: 20%;
+    border-radius: 50%;
+    float: left;
+    border: 2px solid gray; }
+  header nav ul {
+    display: flex; }
+    header nav ul li {
+      margin-left: -10px;
+      padding-right: 1em;
+      text-decoration: none;
+      list-style-type: none; }
+  @media (min-width: 50em) {
+    header {
+      height: 100%;
+      width: 17em;
+      padding: 2.5em;
+      position: fixed;
+      text-align: right; }
+      header > div > img {
+        width: 100%;
+        float: none; }
+      header nav ul {
+        display: block;
+        margin-left: 0; }
+        header nav ul li {
+          font-size: 1.5em;
+          padding-bottom: 2em; } }
+
+#homeLink {
+  display: none; }
+  @media (min-width: 50em) {
+    #homeLink {
+      display: block; } }
+
+/* Header Links Styles */
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold; }
+
+header a:visited {
+  color: white;
+  text-decoration: none; }
+
+header a:active {
+  color: #DEB887; }
+
+header a:hover {
+  color: #000000; }
+
+/**********************/
+/*Skills Styles*/
+#thirdSection {
+  padding: 0 10px 0 10px; }
+  @media (min-width: 50em) {
+    #thirdSection {
+      background-color: white; } }
+
+#firstSection, #work {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid gray; }
+
+#skills {
+  padding: 0px 50px 30px 20px; }
+  @media (min-width: 50em) {
+    #skills {
+      margin-left: 15%;
+      background-color: white; } }
+
+@media (min-width: 50em) {
+  #skills, #about-me, #biggerPrj, #smallerPrj {
+    width: 40%; }
+
+  #smallerPrj {
+    margin-left: 15%;
+    background-color: white;
+    padding: 0px 50px 30px 20px; } }
+@media (min-width: 50em) {
+  footer {
+    padding-left: 17em; } }
+footer ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none; }
+  footer ul li {
+    padding-right: 20px; }
+
+/*****************************/
+
+/*# sourceMappingURL=styles.css.map */

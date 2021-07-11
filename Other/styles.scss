@@ -1,0 +1,166 @@
+$break-large: 50em;
+$primary: #4169e1;
+$secondary-color: #F0E68C;
+$tertiary: white;
+$margin: 0 auto;
+
+@mixin breakpoint($break) {
+    @if $break == large {
+        @media (min-width: $break-large) { @content; }
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: $margin;
+    background-color: $tertiary;
+}
+
+main {
+    padding: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    @include breakpoint(large) {
+        margin-left: 17em;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora';
+}
+
+
+header {
+    width: 100%;
+    margin: $margin;
+    padding: 1em;
+    text-align: center;
+    background-color: $primary;
+    & > div > img {
+        width: 20%;
+        border-radius: 50%;
+        float: left;
+        border: 2px solid gray;
+    }
+    & nav ul {
+        display: flex;
+        & li {
+        margin-left: -10px;
+        padding-right: 1em;
+        text-decoration: none;
+        list-style-type: none;
+        }
+    }
+    @include breakpoint(large) {
+        height: 100%;
+        width: 17em;
+        padding: 2.5em;
+        position: fixed;
+        text-align: right;
+        & > div > img {
+            width: 100%;
+            float: none;
+        }
+        & nav ul {
+            display: block;
+            margin-left: 0;
+            & li {
+                font-size: 1.5em;
+                padding-bottom: 2em;
+            }
+        }
+    }
+}
+
+#homeLink {
+    display: none;
+    @include breakpoint(large) {
+        display: block;
+    }
+}
+
+/* Header Links Styles */
+header a {
+    color: $tertiary;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:visited {
+    color: $tertiary;
+    text-decoration: none;
+}
+
+header a:active {
+    color: #DEB887;
+}
+
+header a:hover {
+    color: #000000;
+
+}
+/**********************/
+
+
+/*Skills Styles*/
+
+#thirdSection {
+    ///background-color: $secondary-color;
+    padding: 0 10px 0 10px;
+    @include breakpoint(large) {
+        background-color: $tertiary;
+    }
+}
+
+#firstSection, #work {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid gray;
+}
+
+#skills {
+    ///background-color: $secondary-color;
+    padding: 0px 50px 30px 20px;
+    @include breakpoint(large) {
+        margin-left: 15%;
+        background-color: $tertiary;
+    }
+}
+
+@include breakpoint(large) {
+    #skills, #about-me, #biggerPrj, #smallerPrj {
+        width: 40%;
+    }
+
+    #smallerPrj {
+        margin-left: 15%;
+        background-color: $tertiary;
+        padding: 0px 50px 30px 20px;
+    }
+}
+
+footer {
+    @include breakpoint(large) {
+        padding-left: 17em;
+    }
+    & ul {
+        display: flex;
+        list-style-type: none;
+        text-decoration: none;
+        & li {
+            padding-right: 20px;
+        }
+    }
+}
+
+/*****************************/

@@ -1,0 +1,63 @@
+$flora: #009c3b;
+$sea: #002776;
+$beach: #ffdf00;
+$babyblue: #89cff0;
+$royalblue: #4169e1;
+$green: #32cd32;
+$red: red;
+$orange: rgb(255, 136, 0);
+$white: white;
+
+body {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+////First Pattern
+.rectangle {
+    fill: $flora ;
+}
+
+
+.rectCenter {
+    fill: $beach;
+}
+
+.circle {
+    fill: $sea;
+}
+
+.text{
+    font: italic 1.5px sans-serif;
+}
+
+///Second Pattern
+.rectangle2 {
+    fill: $sea;
+}
+
+.babyBlue {
+    fill: $babyblue;
+}
+
+.royalBlue {
+    fill: $royalblue;
+}
+
+.green {
+    fill: $green;
+}
+
+.red {
+    fill: $red;
+}
+
+.orange {
+    fill: $orange;
+}
+
+.white {
+    fill: $white;
+}

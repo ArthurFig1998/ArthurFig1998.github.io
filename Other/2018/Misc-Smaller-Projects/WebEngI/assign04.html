@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            var APR, rate, loanTerm, loanAmount, monthlyP;
+            var inputs = document.getElementsByTagName('input');
+            for (var i = 0; i< inputs.length; i++)
+            {
+                inputs[i].onfocus = function(){this.value = '';};
+            }
+            
+            
+            
+            function setValues()
+            {
+                APR = Number(document.getElementById("APR").value);
+                loanTerm = Number(document.getElementById("loanTerm").value);
+                loanAmount = Number(document.getElementById("loanAmount").value);
+                rate = (APR / 100) / 12;
+            }
+            
+            function monthlyPayment()
+            {
+                setValues();
+                monthlyP = (loanAmount * (1 + rate) ^ (loanTerm * 12) * rate) / ((1 + rate) ^ (loanTerm * 12) - 1);
+                if(APR == 0 || APR == NaN || loanAmount == 0 || loanAmount == NaN || loanTerm == 0 || loanAmount == NaN || monthlyP == NaN)
+                {
+                    alert("One or more fields have not been filled. Please, fill all the fields.");
+                    clear(obj);
+                }
+                else
+                {
+                    alert("The monthly payment will be: " + monthlyP);
+                }
+            }
+            
+        
+        </script>
+        <style>
+            fieldset
+            {
+                font-size:16px;
+                padding:10px;
+                width:250px;
+                line-height:1.8;
+                margin: auto;
+            }
+            
+            .center
+            {
+                float:center;
+                width:200px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset class="center">
+                Enter APR (%):<br>
+                <input id="APR" type="text">
+                <br><br>
+                Enter Loan Term (In years):<br>
+                <input id="loanTerm" type="text">
+                <br><br>
+                Enter Loan Amount (In dollars):<br>
+                <input id="loanAmount" type="text">
+                <br><br>
+                <input type="button" onclick="monthlyPayment()" value="Calculate">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+        
+    </body>
+</html>
