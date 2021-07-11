@@ -172,7 +172,7 @@ NetworthComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Why Is It Important to Know Your Net Worth?");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac aliquam odio. Nulla nec convallis purus. Quisque libero odio, condimentum eu arcu non, molestie fermentum augue. Praesent sit amet sollicitudin urna, quis accumsan enim. Aliquam consectetur purus at arcu rutrum, et ornare dui hendrerit. Phasellus ac lectus at nunc cursus faucibus. Integer hendrerit fermentum lacus, sit amet congue mauris porttitor nec. Vestibulum pharetra dictum metus, nec auctor nulla fringilla at.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac aliquam odio. Nulla nec convallis purus. Quisque libero odio, condimentum eu arcu non, molestie fermentum augue. Praesent sit amet sollicitudin urna, quis accumsan enim. Aliquam consectetur purus at arcu rutrum, et ornare dui hendrerit. Phasellus ac lectus at nunc cursus faucibus. Integer hendrerit fermentum lacus, sit amet congue mauris porttitor nec. Vestibulum pharetra dictum metus, nec auctor nulla fringilla at..");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 1);
