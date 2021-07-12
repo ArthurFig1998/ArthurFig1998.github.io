@@ -10374,6 +10374,78 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-bottom: 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.404);
 }
+.icon-set {
+  display: block;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+.icon-set .icon-item {
+  display: block;
+  width: 100%;
+  float: left;
+  margin-bottom: 2.5em;
+}
+@media (min-width: 820px) {
+  .icon-set .icon-item {
+    width: 33%;
+    margin-bottom: 0px;
+    border-right: 1px solid #ccc;
+  }
+}
+.icon-set .icon-item .icon-container {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background: #19D4DE;
+  color: #fff;
+  text-align: center;
+  font-size: 70px;
+}
+.icon-set .icon-item .icon-container .lnr {
+  display: block;
+  padding-top: 26px;
+}
+.icon-set .icon-item .icon-container .lnr:nth-child(1) {
+  background-image: url('financial-statement.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon-set .icon-item h1, .icon-set .icon-item p {
+  padding: 0 50px;
+  color: #545454;
+  margin: 0px;
+}
+.icon-set .icon-item h1 {
+  margin: 1em 0 0.25em;
+  color: #3d3d3d;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+.icon-set .icon-item p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+}
+.icon-set .icon-item.last {
+  border-right: none;
+}
+.icon-set .icon-item:nth-of-type(2) .icon-container {
+  background: #119299;
+}
+.icon-set .icon-item:nth-of-type(3) .icon-container {
+  background: #0a5154;
+}
+.clearfix {
+  clear: both;
+}
 @media only screen and (max-width: 800px) {
   .component-menu-list {
     display: flex;
@@ -10488,6 +10560,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .action a:hover {
   border-color: #8080B9;
   color: #fff;
+}
+@media only screen and (max-width: 800px) {
+  .card {
+    max-height: 250px;
+    min-width: 460px;
+    flex-direction: row;
+  }
+
+  .budget-content {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 html, body {
   height: 100%;
