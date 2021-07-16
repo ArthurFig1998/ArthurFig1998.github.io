@@ -755,7 +755,7 @@ class CreditCardsComponent {
     }
 }
 CreditCardsComponent.ɵfac = function CreditCardsComponent_Factory(t) { return new (t || CreditCardsComponent)(); };
-CreditCardsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CreditCardsComponent, selectors: [["app-credit-cards"]], inputs: { creditCards: "creditCards" }, decls: 173, vars: 1, consts: [[1, "custom-banner-image"], [1, "banner-overlay"], [1, "banner-text"], [1, "page-center"], ["id", "quote"], [1, "budget-content"], [1, "cards"], [1, "card"], [1, "card-image"], ["src", "../../assets/chaseCFF.png", "alt", ""], [1, "card-content"], [1, "card-title"], [1, "card-text"], [1, "table", "table-striped", "table-hover"], ["href", "https://www.referyourchasecard.com/18g/6BMU39STBP", 1, "card-readmore"], ["src", "../../assets/AmexPlatinum.png", "alt", ""], ["href", "http://refer.amex.us/ARTHUFcqTE?xl=cp106r", 1, "card-readmore"], ["src", "../../assets/boaCashRewards.png", "alt", ""], ["href", "https://secure.bankofamerica.com/apply-credit-cards/public/icai-single/#/info/", 1, "card-readmore"], ["class", "card-bottom", 4, "ngFor", "ngForOf"], [1, "card-bottom"], [1, "card-image-bottom"], [3, "src", "alt"], [1, "card-readmore", 3, "href"]], template: function CreditCardsComponent_Template(rf, ctx) { if (rf & 1) {
+CreditCardsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CreditCardsComponent, selectors: [["app-credit-cards"]], inputs: { creditCards: "creditCards" }, decls: 175, vars: 1, consts: [[1, "custom-banner-image"], [1, "banner-overlay"], [1, "banner-text"], [1, "page-center"], ["id", "quote"], [1, "budget-content"], [1, "cards"], [1, "card"], [1, "card-image"], ["src", "../../assets/chaseCFF.png", "alt", ""], [1, "card-content"], [1, "card-title"], [1, "card-text"], [1, "table", "table-striped", "table-hover"], ["href", "https://www.referyourchasecard.com/18g/6BMU39STBP", 1, "card-readmore"], ["src", "../../assets/AmexPlatinum.png", "alt", ""], ["href", "http://refer.amex.us/ARTHUFcqTE?xl=cp106r", 1, "card-readmore"], ["src", "../../assets/boaCashRewards.png", "alt", ""], ["href", "https://secure.bankofamerica.com/apply-credit-cards/public/icai-single/#/info/", 1, "card-readmore"], ["class", "card-bottom", 4, "ngFor", "ngForOf"], [1, "card-bottom"], [1, "card-image-bottom"], [3, "src", "alt"], [1, "card-readmore", 3, "href"]], template: function CreditCardsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -1033,6 +1033,8 @@ CreditCardsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](172, CreditCardsComponent_div_172_Template, 8, 4, "div", 19);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](173, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](174, "br");
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](172);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.creditCards);
